@@ -1,17 +1,25 @@
 import Conversations from "./Conversations";
 import LogoutButton from "./LogoutButton";
 import SearchInput from "./SearchInput";
+import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
-const Sidebar = () => {
+const Sidebar1 = () => {
 	return (
-		<div className='border-r border-slate-500 p-4 flex flex-col'>
+		<div className='border-r border-slate-500 p-4 flex flex-col max-md:w-[40%]'>
+			
 			<SearchInput />
-			<div className='divider px-3'></div>
-			<Conversations />
-			<LogoutButton />
+		
+			<Conversations />	
+<LogoutButton /> 
+
+			
+			
+			
 		</div>
 	);
 };
-export default Sidebar;
+
+export default Sidebar1;
+
 
 
