@@ -14,6 +14,7 @@ const MessageContainer = () => {
 
 	return (
 		<div className='w-full flex flex-col'>
+
 			{!selectedConversation ? (
 				<NoChatSelected />
 			) : (
